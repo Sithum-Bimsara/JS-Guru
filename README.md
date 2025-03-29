@@ -1,5 +1,6 @@
 # Table of Contents
 - [Introduction](#Introduction_to_JavaScript)
+- [JavaScript_Variables_Constants_and_Primitive_Types](#JavaScript_Variables_Constants_and_Primitive_Types)
 
 # 📖 Introduction_to_JavaScript
 
@@ -93,5 +94,87 @@ alert('Yo!');
 ### 🎯 Conclusion
 JavaScript is a powerful and versatile language used for **web development, backend programming, real-time applications, and more**. With ECMAScript defining its standards, JavaScript continues to evolve every year.
 
-In the next lesson, we'll explore **how to set up your development environment for writing JavaScript code**! 🔧💻
+----
+
+# JavaScript_Variables_Constants_and_Primitive_Types
+
+## Variables in JavaScript
+In JavaScript, variables are used to store data values. There are three ways to declare variables:
+
+### 1. `var` (Function-scoped, can be re-declared and updated)
+```js
+var name = "Sithum";
+console.log(name);
+```
+
+### 2. `let` (Block-scoped, can be updated but not re-declared in the same scope)
+```js
+let firstName = "Sithum";
+let lastName = "Bimsara";
+console.log(firstName, lastName);
+```
+
+### 3. `const` (Block-scoped, cannot be updated or re-declared)
+```js
+const interestRate = 0.3;
+interestRate = 1; // This will throw an error
+console.log(interestRate);
+```
+*Error: Assignment to constant variable.*
+
+
+**JavaScript has 2 data types:**
+* Primitive Types
+* Reference Types
+
+## JavaScript Primitive Types
+Primitive types are value types in JavaScript. They include:
+
+### 1. String
+Used to represent text.
+```js
+let name = "Mosh"; // String Literal
+console.log(typeof name); // "string"
+```
+
+### 2. Number
+Represents both integer and floating-point numbers.
+```js
+let age = 30; // Number Literal
+console.log(typeof age); // "number"
+```
+
+### 3. Boolean
+Represents logical values `true` or `false`.
+```js
+let isApproved = false; // Boolean Literal
+console.log(typeof isApproved); // "boolean"
+```
+
+### 4. Undefined
+A variable that has been declared but not assigned a value.
+```js
+let firstName;
+console.log(firstName); // undefined
+console.log(typeof firstName); // "undefined"
+```
+
+### 5. Null
+Represents an explicitly empty value.
+```js
+let selectedColor = null;
+console.log(selectedColor); // null
+console.log(typeof selectedColor); // "object" (this is a historical JavaScript bug)
+```
+
+## Summary
+| Type      | Example       | Description  |
+|-----------|--------------|--------------|
+| String    | `"Mosh"`     | Text values  |
+| Number    | `30`, `3.14` | Numeric values  |
+| Boolean   | `true`, `false` | Logical values |
+| Undefined | `let x;`     | No value assigned |
+| Null      | `let y = null;` | Empty or unknown value |
+
+This covers the fundamental aspects of variables, constants, and primitive types in JavaScript.
 
