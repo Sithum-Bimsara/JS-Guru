@@ -1,7 +1,7 @@
 # Table of Contents
-- [Introduction](#Introduction_to_JavaScript)
+- [Introduction_to_JavaScript](#Introduction_to_JavaScript)
 - [JavaScript_Variables_Constants_and_Primitive_Types](#JavaScript_Variables_Constants_and_Primitive_Types)
-- [JavaScript Reference Types](#JavaScript_Reference_Types)
+- [JavaScript_Reference_Types](#JavaScript_Reference_Types)
 
 # 📖 Introduction_to_JavaScript
 
@@ -181,7 +181,7 @@ This covers the fundamental aspects of variables, constants, and primitive types
 
 ---
 
-# JavaScript Reference Types
+# JavaScript_Reference_Types
 
 In JavaScript, reference types are non-primitive data types. They include objects, arrays, and functions.
 
