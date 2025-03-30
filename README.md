@@ -1,6 +1,7 @@
 # Table of Contents
 - [Introduction](#Introduction_to_JavaScript)
 - [JavaScript_Variables_Constants_and_Primitive_Types](#JavaScript_Variables_Constants_and_Primitive_Types)
+- [JavaScript Reference Types](#JavaScript_Reference_Types)
 
 # 📖 Introduction_to_JavaScript
 
@@ -177,4 +178,87 @@ console.log(typeof selectedColor); // "object" (this is a historical JavaScript 
 | Null      | `let y = null;` | Empty or unknown value |
 
 This covers the fundamental aspects of variables, constants, and primitive types in JavaScript.
+
+---
+
+# JavaScript Reference Types
+
+In JavaScript, reference types are non-primitive data types. They include objects, arrays, and functions.
+
+## 1. Objects
+Objects are collections of key-value pairs.
+
+### Creating an Object
+```js
+let person = {
+    firstName: "Sithum",
+    lastName: "Bimsara",
+    age: 30,
+    isMarried: false
+};
+console.log(person);
+```
+
+### Accessing Object Properties
+```js
+console.log(person.firstName); // Dot notation
+console.log(person["lastName"]); // Bracket notation
+```
+
+### Modifying Object Properties
+```js
+person.age = 22;
+person["isMarried"] = true;
+console.log(person);
+```
+
+## 2. Arrays
+Arrays are ordered collections of values.
+
+### Creating an Array
+```js
+let colors = ["red", "blue", "green"];
+console.log(colors);
+```
+
+### Accessing Array Elements
+```js
+console.log(colors[0]); // "red"
+```
+
+### Modifying an Array
+```js
+colors.push("yellow"); // Adds an element to the end
+colors.pop(); // Removes the last element
+console.log(colors);
+```
+
+## 3. Functions
+Functions are blocks of reusable code.
+
+### Function Declaration
+```js
+function greet(name) {
+    return "Hello, " + name;
+}
+console.log(greet("Mosh"));
+```
+
+### Function Expression
+```js
+let square = function(number) {
+    return number * number;
+};
+console.log(square(5));
+```
+
+## Summary
+| Reference Type | Description |
+|---------------|-------------|
+| Objects       | Collection of key-value pairs |
+| Arrays        | Ordered list of elements |
+| Functions     | Reusable block of code |
+
+This covers the main reference types in JavaScript.
+
 
